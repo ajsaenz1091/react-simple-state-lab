@@ -6,15 +6,12 @@ class Cell extends Component {
     constructor(props){
         super();
         this.state ={
-            color: props.val
+            color: props.value
         }
     }
     changeStateColor = () =>{
-        if(this.state.color === '#F00'){
+        // if(this.state.color === '#F00' || this.state.color === '#00F'){
             this.setState({color: '#333'})
-        }else {
-            this.setState({color: '#F00'})
-        };
     }
     render(){
         console.log(this.state.color)
